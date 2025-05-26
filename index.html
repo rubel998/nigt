@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>স্কুল রেজিস্ট্রেশন ফর্ম</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #d0e6ff);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      background: white;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2a3f7a;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #2a3f7a;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1e2e5a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>স্কুল রেজিস্ট্রেশন ফর্ম</h2>
+  <form>
+    <label for="name">পুরো নাম:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="dob">জন্মতারিখ:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">লিঙ্গ:</label>
+    <select id="gender" name="gender" required>
+      <option value="">-- নির্বাচন করুন --</option>
+      <option value="male">পুরুষ</option>
+      <option value="female">নারী</option>
+      <option value="other">অন্যান্য</option>
+    </select>
+
+    <label for="class">শ্রেণি:</label>
+    <select id="class" name="class" required>
+      <option value="">-- নির্বাচন করুন --</option>
+      <option value="6">ষষ্ঠ</option>
+      <option value="7">সপ্তম</option>
+      <option value="8">অষ্টম</option>
+      <option value="9">নবম</option>
+      <option value="10">দশম</option>
+    </select>
+
+    <label for="phone">মোবাইল নম্বর:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="01XXXXXXXXX" required>
+
+    <label for="address">ঠিকানা:</label>
+    <input type="text" id="address" name="address" required>
+
+    <button type="submit">জমা দিন</button>
+  </form>
+</div>
+
+<footer>
+  &copy; ২০২৫ আপনার স্কুলের নাম
+</footer>
+
+</body>
+</html>
